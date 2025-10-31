@@ -37,9 +37,14 @@
         },
         "break",
         {
-            "type": "wm",
-            "key": "WM   ",
+            "type": "de",
+            "key": "DE   ",
             "keyColor": "32", 
+        },
+        {
+            "type": "wm",
+            "key": " ├ 󰖲 ",
+            "keyColor": "32",
         },
         {
             "type": "wmtheme",
