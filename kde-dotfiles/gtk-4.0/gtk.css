@@ -1,0 +1,9 @@
+window.background {
+    border-radius: 5px; /* Example of customizing the radius */
+}
+
+windowcontrols button image:not(:hover) {
+    background-color: transparent;
+}
+
+@import 'colors.css';
