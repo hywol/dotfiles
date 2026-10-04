@@ -1,55 +1,98 @@
 /* More customizations */
 
-button.titlebutton { /* GTK3 */
-  color: transparent;
+button.titlebutton {
   min-width: 18px;
   min-height: 18px;
+  border-radius: 24px;
+  color: transparent;
 }
+
+.titlebar .right {
+  margin-right: 0px;
+}
+.titlebar .left {
+  margin-left: 0px;
+}
+
+button.titlebutton {
+  margin: 0 4px;
+  border-width: 0;
+}
+button.titlebutton.close {
+  background-color: #fc5753;
+}
+button.titlebutton.close:hover {
+  background-color: mix(black,#fc5753,0.7);
+}
+button.titlebutton.close:active {
+  background-color: mix(black,#fc5753,0.5);
+}
+button.titlebutton.maximize {
+  background-color: #33c848;
+}
+button.titlebutton.maximize:hover {
+  background-color: mix(white,#33c848,0.7);
+}
+button.titlebutton.maximize:active {
+  background-color: mix(white,#33c848,0.5);
+}
+button.titlebutton.minimize {
+  background-color: #ffba40;
+}
+button.titlebutton.minimize:hover {
+  background-color: mix(white,#ffba40,0.7);
+}
+button.titlebutton.minimize:active {
+  background-color: mix(white,#ffba40,0.5);
+}
+
+.maximized button.titlebutton.maximize {
+  background-color: #33c848;
+}
+.maximized button.titlebutton.maximize:hover {
+  background-color: mix(white,#33c848,0.7);
+}
+.maximized button.titlebutton.maximize:active {
+  background-color: mix(white,#33c848,0.5);
+}
+
 button.titlebutton:backdrop {
   opacity: 0.5;
 }
-
-windowcontrols > button > image { /* GTK4 */
-  color: transparent;
-  min-width: 2px;
-  min-height: 2px;
-  border-radius: 100%;
-  padding: 0;
-  margin: 0 5px;
+button.titlebutton:backdrop.close {
+  background-color: mix(white,#fc5753,0.2);
+}
+button.titlebutton:backdrop.close:hover {
+  background-color: mix(white,#fc5753,0.7);
+}
+button.titlebutton:backdrop.close:active {
+  background-color: mix(white,#fc5753,0.5);
+}
+button.titlebutton:backdrop.maximize {
+  background-color: mix(white,#33c848,0.2);
+}
+button.titlebutton:backdrop.maximize:hover {
+  background-color: mix(white,#33c848,0.7);
+}
+button.titlebutton:backdrop.maximize:active {
+  background-color: mix(white,#33c848,0.5);
+}
+button.titlebutton:backdrop.minimize {
+  background-color: mix(white,#ffba40,0.2);
+}
+button.titlebutton:backdrop.minimize:hover {
+  background-color: mix(white,#ffba40,0.7);
+}
+button.titlebutton:backdrop.minimize:active {
+  background-color: mix(white,#ffba40,0.5);
 }
 
-button.titlebutton.close,
-windowcontrols > button.close > image {
-  background-color: #fc5753;
-  border: 1px solid #e04644;
+.maximized button.titlebutton:backdrop.maximize {
+  background-color: mix(white,#33c848,0.2);
 }
-
-button.titlebutton.close:hover,
-windowcontrols > button.close:hover > image {
-  color: #7e0608;
-  opacity: 0.8;
+.maximized button.titlebutton:backdrop.maximize:hover {
+  background-color: mix(white,#33c848,0.7);
 }
-
-button.titlebutton.maximize,
-windowcontrols > button.maximize > image {
-  background-color: #33c848;
-  border: 1px solid #3e9948;
-}
-
-button.titlebutton.maximize:hover,
-windowcontrols > button.maximize:hover > image {
-  color: #0b650d;
-  opacity: 0.8;
-}
-
-button.titlebutton.minimize,
-windowcontrols > button.minimize > image {
-  background-color: #ffba40;
-  border: 1px solid #dd9d30;
-}
-
-button.titlebutton.minimize:hover,
-windowcontrols > button.minimize:hover > image {
-  color: #9a5711;
-  opacity: 0.8;
+.maximized button.titlebutton:backdrop.maximize:active {
+  background-color: mix(white,#33c848,0.5);
 }
