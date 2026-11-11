@@ -1,0 +1,14 @@
+/* Transparent Sidebar */
+window {
+  background: alpha(@window_bg_color, 0.7);
+}
+
+.sidebar-pane,
+.sidebar,
+.navigation-sidebar {
+  background: transparent;
+}
+
+.content-pane {
+  background: @view_bg_color;
+}
